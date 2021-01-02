@@ -7,13 +7,13 @@ Getting the data:
 # Measurements
 =============================================================================
 
-tBodyAccmeanX
-tBodyAccmeanY
-tBodyAccmeanZ
-tBodyAccstdX
-tBodyAccstdY
-tBodyAccstdZ
-tGravityAccmeanX
+-tBodyAccmeanX
+-tBodyAccmeanY
+-tBodyAccmeanZ
+-tBodyAccstdX
+-tBodyAccstdY
+-tBodyAccstdZ
+-tGravityAccmeanX
 tGravityAccmeanY
 tGravityAccmeanZ
 tGravityAccstdX
