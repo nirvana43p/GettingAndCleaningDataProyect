@@ -8,7 +8,9 @@ Getting the data:
 =============================================================================
 
 -tBodyAccmeanX
+
 -tBodyAccmeanY
+
 -tBodyAccmeanZ
 -tBodyAccstdX
 -tBodyAccstdY
