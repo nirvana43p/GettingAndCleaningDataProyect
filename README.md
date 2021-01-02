@@ -14,13 +14,13 @@ In the run_analysis.R file are the 5 task of this proyect:
 
 5.- From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-=============================================================================
 
+The tidy data of task 5 has the name avgTidySet. 
 
 
 Notes:
 =============================================================================
 
 - I took the fourth task firstly. Therefore, I set the column names of training and test data firstly.
+- The tidy data of task 5 has the name avgTidySet.txt.
 
-=============================================================================
