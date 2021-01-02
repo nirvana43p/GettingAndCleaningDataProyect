@@ -1,3 +1,5 @@
+library(dplyr)
+
 # Unzip the zip file
 if(!file.exists("./UCI HAR Dataset")) {
     print("Unzipping ....")
@@ -71,8 +73,9 @@ merge_mean_sd_measurement <- merge(mean_sd_measurements, activityLabels, by="act
 # independent tidy data set with the average of each variable for each activity and each subject.
 
 # Building the new tidy data set
-avgTidySet <- aggregate(. ~subjectId + activityId, merge_mean_sd_measurement, mean)
-avgTidySet <- avgTidySet[order(avgTidySet$subjectId, avgTidySet$activityId),]
+avgTidySet <- merge_mean_sd_measurement %>%
+    group_by(subjectId, activityId) %>%
+    summarise_all(funs(mean))
 
 # Saving the new tidy dataset
 write.table(avgTidySet, "avgTidySet.txt", row.name=FALSE)
